@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
-using SolidTask.Interfaces;
+using Dal.Contract.Interafces;
 
-namespace SolidTask
+namespace Dal.Implementation
 {
     public class LoadFromFile : ILoader<IEnumerable<string>>
     {

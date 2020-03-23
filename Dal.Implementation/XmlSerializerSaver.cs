@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.IO;
 using System.Text;
 using System.Xml.Serialization;
-using SolidTask.Interfaces;
-using SolidTask.XmlSerializationModel;
+using Dal.Contract.Interafces;
+using Bll.Contract.Entities.XmlSerializationModel;
 
-namespace SolidTask
+namespace Dal.Implementation
 {
     public class XmlSerializerSaver : ISaver<UrlsDocument>
     {

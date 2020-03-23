@@ -3,9 +3,8 @@ using System.Collections.Generic;
 using System.Text;
 using System.Xml.Serialization;
 
-namespace SolidTask.XmlSerializationModel
+namespace Bll.Contract.Entities.XmlSerializationModel
 {
-    [XmlRoot("parameters")]
     public class Parameter
     {
         [XmlAttribute("value")]

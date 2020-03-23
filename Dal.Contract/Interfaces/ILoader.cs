@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace SolidTask.Interfaces
+namespace Dal.Contract.Interafces
 {
     public interface ILoader<out TResult>
     {

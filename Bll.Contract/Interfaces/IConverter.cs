@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace SolidTask.Interfaces
+namespace Bll.Contract.Interfaces
 {
     public interface IConverter<in TSource, out TResult>
     {

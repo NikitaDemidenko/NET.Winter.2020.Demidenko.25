@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace SolidTask
+namespace Bll.Contract.Entities
 {
     public class Url
     {

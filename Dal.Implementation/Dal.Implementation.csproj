@@ -1,13 +1,12 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Bll.Contract\Bll.Contract.csproj" />
-    <ProjectReference Include="..\DependencyResolver\DependencyResolver.csproj" />
+    <ProjectReference Include="..\Dal.Contract\Dal.Contract.csproj" />
   </ItemGroup>
 
 </Project>

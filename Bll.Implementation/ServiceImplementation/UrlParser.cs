@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Linq;
 using System.Web;
-using SolidTask.Interfaces;
+using Bll.Contract.Interfaces;
+using Bll.Contract.Entities;
 
-namespace SolidTask
+namespace Bll.Implementation.ServiceImplementation
 {
-    public class UrlParser : IParser<string, Url>
+    public class UrlParser : IParser<Url>
     {
         public Url Parse(string source)
         {

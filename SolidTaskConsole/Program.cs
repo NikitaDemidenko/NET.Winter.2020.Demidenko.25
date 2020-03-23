@@ -1,7 +1,7 @@
 ﻿using System;
-using SolidTask;
-using SolidTask.Interfaces;
-using SolidTask.XmlSerializationModel;
+using Microsoft.Extensions.DependencyInjection;
+using DependencyResolver;
+using Bll.Contract.Interfaces;
 
 namespace SolidTaskConsole
 {
@@ -9,16 +9,11 @@ namespace SolidTaskConsole
     {
         static void Main(string[] args)
         {
-            var loader = new LoadFromFile("urls.txt");
-            var urlsStrings = loader.Load();
+            var serviceProvider = new ResolverConfig().CreateServiceProvider();
 
-            var parser = new UrlParser();
+            var service = serviceProvider.GetService<IService>();
 
-            var converter = new StringsToUrlsDocumentConverter(parser);
-            var urlsDocument = converter.Convert(urlsStrings);
-
-            var saver = new XmlSerializerSaver("result.xml");
-            saver.Save(urlsDocument);
+            service.Run();
         }
     }
 }
